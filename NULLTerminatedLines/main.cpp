@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<Windows.h>
 
 using namespace std;
@@ -34,33 +34,33 @@ void main()
 
 	const int SIZE = 256;
 	char str[SIZE] = {};
-	cout << "Ââåäèòå ñòðîêè: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÐ¸: ";
 	//cin >> str;
 	SetConsoleCP(1251);
 	cin.getline(str, SIZE);
 	//SetConsoleCP(866);
 	cout << str << endl;
-	cout << "Ðàçìåð ñòðîêè â ñèìâîëàõ: " << StringLength(str) << endl;
-	cout << "Ðàçìåð ñòðîêè â ñèìâîëàõ: " << strlen(str) << endl;
-	cout << "Ðàçìåð ñòðîêè â Áàéòàõ: " << sizeof(str) << endl;
-	/*cout << "Èçìåíåíèå ñòðî÷íûõ áóêâ íà çàãëàâíûå: " << endl;
+	cout << "Ð Ð°Ð·Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ð² ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°Ñ…: " << StringLength(str) << endl;
+	cout << "Ð Ð°Ð·Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ð² ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°Ñ…: " << strlen(str) << endl;
+	cout << "Ð Ð°Ð·Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ð² Ð‘Ð°Ð¹Ñ‚Ð°Ñ…: " << sizeof(str) << endl;
+	/*cout << "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ñ‹Ñ… Ð±ÑƒÐºÐ² Ð½Ð° Ð·Ð°Ð³Ð»Ð°Ð²Ð½Ñ‹Ðµ: " << endl;
 	upper_case(str);
 	cout << str << endl;
-	cout << "Èçìåíåíèå çàãëàâíûõ áóêâ íà ñòðî÷íûå: " << endl;
+	cout << "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ Ð·Ð°Ð³Ð»Ð°Ð²Ð½Ñ‹Ñ… Ð±ÑƒÐºÐ² Ð½Ð° ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ñ‹Ðµ: " << endl;
 	lower_case(str);
 	cout << str << endl;
-	cout << "Óäàëåíèå ëèøíèõ ïðîáåëîâ: " << endl;
+	cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð»Ð¸ÑˆÐ½Ð¸Ñ… Ð¿Ñ€Ð¾Ð±ÐµÐ»Ð¾Ð²: " << endl;
 	shrink(str);
 	cout << str << endl;*/
 
-	cout << (palindrome(str) ? "" : "Íå ") << "ÿâëÿåòñÿ ïàëèíäðîìîì" << endl;
+	cout << (palindrome(str) ? "" : "ÐÐµ ") << "ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð¿Ð°Ð»Ð¸Ð½Ð´Ñ€Ð¾Ð¼Ð¾Ð¼" << endl;
 	cout << str << endl;
 
-	cout << (is_int_number(str) ? "" : "Íå ") << "ÿâëÿåòñÿ öåëûì äåñÿòè÷íûì ÷èñëîì" << endl;
+	cout << (is_int_number(str) ? "" : "ÐÐµ ") << "ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ñ†ÐµÐ»Ñ‹Ð¼ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ñ‹Ð¼ Ñ‡Ð¸ÑÐ»Ð¾Ð¼" << endl;
 	cout << to_int_number(str) << endl;
-	cout << (is_bin_number(str) ? "" : "Íå ") << "ÿâëÿåòñÿ äâîè÷íûì ÷èñëîì " << endl;
-	cout << "Ââåäåííîå äâîè÷íîå ÷èñëî ïðè ïåðåâîäå â äåñÿòè÷íóþ áóäåò = " << bin_to_dec_number(str) << endl;
-	cout << (is_hex_number(str) ? "" : "Íå ") << "ÿâëÿåòñÿ øåñòíàäöàòèðè÷íûì ÷èñëîì" << endl;
+	cout << (is_bin_number(str) ? "" : "ÐÐµ ") << "ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ñ‹Ð¼ Ñ‡Ð¸ÑÐ»Ð¾Ð¼ " << endl;
+	cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ð½Ð¾Ðµ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¿Ñ€Ð¸ Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ðµ Ð² Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½ÑƒÑŽ Ð±ÑƒÐ´ÐµÑ‚ = " << bin_to_dec_number(str) << endl;
+	cout << (is_hex_number(str) ? "" : "ÐÐµ ") << "ÑÐ²Ð»ÑÐµÑ‚ÑÑ ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚Ð¸Ñ€Ð¸Ñ‡Ð½Ñ‹Ð¼ Ñ‡Ð¸ÑÐ»Ð¾Ð¼" << endl;
 	
 	cout << hex_to_dec(str);
 }
@@ -78,7 +78,7 @@ void upper_case(char str[])
 		{
 			str[i] -= 32;
 		}
-		if (str[i] >= 'à' && str[i] < 'ÿ')
+		if (str[i] >= 'Ð°' && str[i] < 'Ñ')
 		{
 			str[i] -= 32;
 		}		*/
